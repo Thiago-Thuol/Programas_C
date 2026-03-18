@@ -5,9 +5,9 @@ void main(){
     printf("Digite dois numeros\n");
     scanf("%d,%d,%d",&a,&b,&c);
 
-    if ((a>b) && (a>c)){
+    if ((a>=b) && (a>=c)){
         primeiro = a;
-        if (b>c){
+        if (b>=c){
             segundo = b;
             terceiro = c;
         }
@@ -17,9 +17,9 @@ void main(){
         }
     }
     else{
-        if (b>c){
+        if (b>=c){
             primeiro = b;
-            if (a>c){
+            if (a>=c){
             segundo = a;
             terceiro = c;
             }
@@ -30,7 +30,7 @@ void main(){
         }
         else{
             primeiro = c;
-            if (a>b){
+            if (a>=b){
                 segundo = a;
                 terceiro = b;
             }
@@ -40,5 +40,5 @@ void main(){
             }
         }
     }
-    printf("\nValor do meio %d",segundo);
+    printf("\n%d %d %d",terceiro,segundo,primeiro);
 }
