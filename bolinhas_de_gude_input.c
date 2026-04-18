@@ -12,8 +12,9 @@ void main(){
     printf("Bolinhas Pequenas: ");
     scanf("%d",&c);
 
-    for (i = a; i >= 0; i = i - 150){
 
+    for (i = a; i >= 0; i = i - 150){
+   
         caixas += 1; 
         a = i;
     }
@@ -23,12 +24,20 @@ void main(){
         b = i;
     }
     for (i = c; i >= 0; i = i - 550){
-
+    
         caixas += 1;
         c = i;
     }
-    b = (float) c * 1.84;
-    b = (float) a * 2 ;
+    b = a * 2;
+    c = b * 1.83;
+
+    for (i = c; i >= 0; i = i - 550){
+    
+        caixas += 1;
+        c = i;
+    }
+
+
     printf("%d\n",caixas-3);
     printf("%d,%d,%d\n",a,b,c);
     
