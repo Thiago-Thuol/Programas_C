@@ -15,6 +15,8 @@ void main () {
     //Se o funcionário tem menos de 3 dependentes, ele recebe um acréscimo de 3% sobre o salário
     //base para cada 5 anos de casa que ele tem (até o máximo de 5 acréscimos).
 
+
+
     printf("Digite o salario base! : ");
     scanf("%f",&salario_b);
 
@@ -63,7 +65,7 @@ void main () {
 
 //--------verifica se o ano e bissexto---------///
 
-    if (ano_atual%400 == 0) {
+    if ((ano_atual%4 == 0 && ano_atual%100 != 0) || (ano_atual %400)) {
         acrescimo += 0.01;    
     }
     printf ("acrescimo = %f\n",acrescimo);
