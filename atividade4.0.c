@@ -49,10 +49,16 @@ void main () {
     }
 
 
-    printf("Mais perto da media = %d",maisperto);
 
-
+    printf("\nMais perto da media = %d",maisperto);
     
+    int repetidos = 0;
+        for (int i = 0;i<10;i++){
+        for (int j = i+1;j<10;j++){
+            if (notas[i] == notas[j]) repetidos ++ ;
+        }
+    }
 
+    printf("\nNumero repetidos %d",repetidos);
 
 }

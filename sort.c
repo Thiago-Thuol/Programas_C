@@ -12,7 +12,6 @@ void main () {
                 notas[j] = notas[i];
                 notas[i] = t;
             }
-            else break;
         }
     }
     for (int i =0;i<8;i++){
