@@ -8,7 +8,7 @@ int ehNumero ( char vet[] ){
     int num = 1;
     int pont = 0;
     for (int i = 0;vet[i] == '\0';i++){
-        if (vet[i] == '0' || vet[i] == '1' || vet[i] == '2' || vet[i] == '3' || vet[i] == '4' || vet[i] == '5' || vet[i] == '6' || vet[i] == '7' || vet[i] == '8' || vet[i] == '9');
+        if (vet[i] == '0' || vet[i] == '1' || vet[i] == '2' || vet[i] == '3' || vet[i] == '4' || vet[i] == '5' || vet[i] == '6' || vet[i] == '7' || vet[i] == '8' || vet[i] == '9' || vet[i] == '.');
         else num = 0;
         if (vet [i] == '.') pont ++;
     }
