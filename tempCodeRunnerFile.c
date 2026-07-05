@@ -1,1 +1,0 @@
-Papagaio azul e verde
